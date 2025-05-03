@@ -1,0 +1,125 @@
+// Passenger functionality
+Function PassengerRegister(username, password, details):
+    If valid(details):
+        Store details in the system
+        Display "Registration Confirmation"
+    Else:
+        Display "Error: Invalid Details"
+
+Function PassengerLogin(username, password):
+    If credentials match:
+        Display "Login Success"
+    Else:
+        Display "Error: Incorrect Username or Password"
+
+Function BookTaxi(passengerId, location, destination):
+    Display available drivers
+    selectedDriver = SelectDriver()
+    NotifyDriver(selectedDriver, "New Booking")
+    If driver accepts:
+        ConfirmBooking(passengerId, selectedDriver, location, destination)
+    Else:
+        Display "Error: Booking Rejected"
+
+Function MakePayment(bookingId, paymentDetails):
+    If valid(paymentDetails):
+        Process payment
+        Display "Payment Confirmation"
+    Else:
+        Display "Error: Payment Failed"
+
+Function PassengerLogout(passengerId):
+    Log passenger out
+    Display "Logout Confirmation"
+
+
+// Driver functionality
+Function DriverRegister(username, password, driverDetails):
+    If valid(driverDetails):
+        Store driver details in the system
+        Display "Registration Confirmation"
+    Else:
+        Display "Error: Invalid Driver Details"
+
+Function DriverLogin(username, password):
+    If credentials match:
+        Display "Login Success"
+    Else:
+        Display "Error: Incorrect Username or Password"
+
+Function ChangeTaxiStatus(driverId, newStatus):
+    Update driver's taxi status (e.g., Available/Unavailable)
+    Display "Status Updated"
+
+Function TrackPassengerLocation(bookingId):
+    Get passenger location from system
+    Display passenger location to driver
+
+Function DriverLogout(driverId):
+    Log driver out
+    Display "Logout Confirmation"
+
+
+// Telephone Operator functionality
+Function OperatorBookTaxiForPassenger(passengerDetails, location, destination):
+    If valid(passengerDetails):
+        selectedDriver = SelectDriver()
+        NotifyDriver(selectedDriver, "New Booking")
+        If driver accepts:
+            ConfirmBooking(passengerDetails, selectedDriver, location, destination)
+            Display "Booking Confirmation"
+        Else:
+            Display "Error: Booking Rejected"
+    Else:
+        Display "Error: Invalid Passenger Details"
+
+
+// Vehicle Owner functionality
+Function RegisterVehicle(ownerId, vehicleDetails):
+    If valid(vehicleDetails):
+        Store vehicle details in the system
+        Display "Vehicle Registered"
+    Else:
+        Display "Error: Invalid Vehicle Details"
+
+Function ViewTaxiRecords(ownerId):
+    Fetch and Display vehicle records for owner
+
+
+// Admin functionality
+Function ManageTaxiServices():
+    Update taxi services in the system
+    Display "Taxi Services Updated"
+
+Function ManageDrivers():
+    Update driver list in the system
+    Display "Driver List Updated"
+
+Function ManageVehicles():
+    Update vehicle list in the system
+    Display "Vehicle List Updated"
+
+Function ManageVehicleOwners():
+    Update vehicle owner list in the system
+    Display "Vehicle Owner List Updated"
+
+Function ManageTelephoneOperators():
+    Update telephone operator list in the system
+    Display "Telephone Operator List Updated"
+
+Function ManagePassengers():
+    Update passenger list in the system
+    Display "Passenger List Updated"
+
+Function ValidateRegistrationDetails(userDetails):
+    If valid(userDetails):
+        Display "Validation Completed"
+    Else:
+        Display "Error: Invalid Details"
+
+Function DisplayErrorMessages(error):
+    Display error message to user
+
+Function AdminLogout(adminId):
+    Log admin out
+    Display "Logout Confirmation"

@@ -1,0 +1,86 @@
+.about {
+  padding: 50px 0;
+  background-color: #fff;
+  height: 800px;
+}
+
+.aboutContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.main-txt h1 {
+  text-align: center;
+  font-size: 62px;
+  color: #000;
+  font-weight: 650;
+  margin-bottom: 40px;
+}
+
+.main-txt h1 span {
+  color: rgb(255, 170, 0);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.col-md-6 {
+  width: 100%;
+  max-width: 48%;
+  box-sizing: border-box;
+}
+
+.image-col {
+  flex: 1;
+}
+
+.content-col {
+  flex: 1;
+  padding-left: 30px;
+}
+
+.aboutCard {
+  text-align: center;
+  border: none;
+  background-color: transparent;
+}
+
+.about-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+h2 {
+  font-size: 32px;
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+#about-btn {
+  padding: 10px 20px;
+  background-color: rgb(255, 170, 0);
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#about-btn:hover {
+  background-color: #ff7700;
+}

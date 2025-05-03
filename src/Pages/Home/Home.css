@@ -1,0 +1,63 @@
+/* Home section layout */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100%;
+    padding: 0 50px;
+    background-image: url('../../Assets/Images/homeBG.jpg') none repeat;
+  }
+  
+  /* Half-circle effect for avatar */
+  
+  .avatar-img {
+    position: relative;
+    width: 130%;
+    height: 130%;
+    object-fit: cover;
+    left: -100px; /* Adjust this to control how much the image overflows */
+    top:60px;
+  }
+  
+  /* Content section on the right side */
+  .content {
+    width: 50%;
+    text-align: left;
+    padding-left: 20px;
+  }
+  
+  .content h5 {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  .content h1 {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 600;
+    margin-top: 5px;
+    text-align: left;
+  } 
+  .content p{
+    color: #fff;
+  }
+  .content a {
+    padding: 10px 40px;
+    background: yellow;
+    color: #000;
+    font-weight: 600;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+    margin-top: 20px;
+    display: inline-block;
+  }
+  
+  .content a:hover {
+    background: #ff7700;
+  }
+  

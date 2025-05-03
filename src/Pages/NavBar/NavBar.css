@@ -1,0 +1,99 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 50px;
+    padding-top: 5px;
+    align-items: center;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    position: fixed;
+}
+
+/* Logo styling */
+.nav-logo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+}
+
+.nav-logo > span {
+    color: #ffa500; /* Highlights the 'TAXI' part in yellow */
+}
+
+/* Nav menu styling */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 18px;
+    gap: 20px; /* Space between the menu items */
+}
+
+/* Styling for the nav items */
+.nav-menu li {
+    position: relative;
+}
+.nav-menu li a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+.nav-menu li a:hover {
+    background-color: rgba(231, 172, 96, 0.301); /* Light overlay effect on hover */
+    border-radius: 4px;
+    color: yellow;
+}
+/* Profile section */
+.nav-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between profile pic and name */
+    color: white;
+}
+
+/* Profile picture */
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the entire circle without distortion */
+    border: 2px solid white; /* Optional border around the profile picture */
+}
+
+/* Profile name styling */
+.profile-name {
+    font-size: 18px;
+}
+
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .nav {
+        padding: 10px 20px; /* Reduces padding on smaller screens */
+    }
+
+    .nav-logo {
+        font-size: 32px; /* Reduces logo size */
+    }
+
+    .nav-menu {
+        gap: 15px; /* Reduces gap between menu items */
+        font-size: 16px; /* Reduces font size */
+    }
+    .profile-name {
+        font-size: 16px; /* Reduces the profile name size */
+    }
+
+    .profile-pic {
+        width: 30px; /* Reduces profile picture size */
+        height: 30px;
+    }
+}
